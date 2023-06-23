@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Signup</title>
+    <link rel="stylesheet" href="../Assets/css/main.css">
+    
+</head>
+<body>
+    <div class="container">
+
+        <div class="form">
+            <h2>Sign Up</h2>
+            <form action="register.php" id="form" method="POST" onsubmit="event.preventDefault(); validRegistration()">
+                <div class="input-block">
+                    <input class="form_input" id="username" name="username" type="text" placeholder="Username">
+                </div>
+                <div class="input-block">
+                    <input class="form_input" id="password" name="password" type="text" placeholder="Password">
+                </div>
+                <div class="input-block">
+                    <input class="form_input" id="mobile_number" name="mobile_number" type="text" placeholder="Mobile Number">
+                </div>
+                <div class="input-block">
+                    <select name="blood_group" id="blood_group_select">
+                        <option disabled selected>Select your blood group:</option>
+                        <option value="A+">A+</option>
+                        <option value="A-">A-</option>
+                        <option value="B+">B+</option>
+                        <option value="B-">B-</option>
+                        <option value="O+">O+</option>
+                        <option value="O-">O-</option>
+                        <option value="AB+">AB+</option>
+                        <option value="AB-">AB-</option>
+                    </select>
+                </div>
+                <div class="input-block">
+                    <input class="form_input" id="age" name="age" type="number" placeholder="Age">
+                </div>
+                <div class="input-block">
+                    <input class="form_input" id="disease" name="disease" type="text" placeholder="Disease">
+                </div>
+                <div class="input_block">
+                    <input class="form_input" id="doctor" name="doctor" type="text" placeholder="Doctor-Name">
+                </div>
+                <div class="input-block">
+                    <input class="form_input" id="address" name="address" type="text" placeholder="Address">
+                </div>
+                <button type="button">Register</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
